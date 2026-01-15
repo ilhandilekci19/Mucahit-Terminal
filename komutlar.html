@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mücahit Dili | Resmi Komut Rehberi</title>
+    <style>
+        body { background-color: #0d1117; color: white; font-family: 'Segoe UI', sans-serif; margin: 0; line-height: 1.6; }
+        .navbar { background: #161b22; padding: 20px; text-align: center; border-bottom: 1px solid #30363d; position: sticky; top: 0; }
+        .navbar a { color: #58a6ff; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        .content { max-width: 900px; margin: 50px auto; padding: 20px; }
+        .kod-kutusu { background: #000; color: #7ee787; padding: 20px; border-radius: 8px; font-family: 'Consolas', monospace; border: 1px solid #30363d; margin: 15px 0; position: relative; }
+        .kod-kutusu::before { content: "Mücahit Kod örneği:"; display: block; color: #8b949e; font-size: 0.8rem; margin-bottom: 10px; }
+        h2 { color: #2ea043; border-left: 4px solid #2ea043; padding-left: 15px; margin-top: 40px; }
+        .aciklama { color: #8b949e; font-size: 1.1rem; }
+        .etiket { background: #238636; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">ANA SAYFA</a>
+        <a href="komutlar.html">KOMUT REHBERİ</a>
+    </div>
+
+    <div class="content">
+        <h1>Mücahit Dili Komut Kütüphanesi</h1>
+        <p class="aciklama">Mücahit dili, Türkçe mantık üzerine kurulu hızlı bir scripting dilidir. Aşağıdaki komutları kullanarak ilk yazılımınızı geliştirebilirsiniz.</p>
+
+        <h2>1. Ekrana Çıktı Verme <span class="etiket">Temel</span></h2>
+        <p>Kullanıcıya mesaj göstermek veya bir sonucu ekrana yazdırmak için kullanılır.</p>
+        <div class="kod-kutusu">
+terminal_yazdır=("Selam Dünya!")
+terminal_yazdır=(12345)
+        </div>
+
+        <h2>2. Değişken Tanımlama <span class="etiket">Hafıza</span></h2>
+        <p>Verileri saklamak için kullanılır. Eşittir (=) sembolü ile değer ataması yapılır.</p>
+        <div class="kod-kutusu">
+değişken=isim="Mücahit"
+değişken=yas=18
+        </div>
+
+        <h2>3. Matematik İşlemleri <span class="etiket">Mantık</span></h2>
+        <p>Toplama, çıkarma, çarpma ve bölme işlemlerini doğrudan yapabilirsiniz. İşlem önceliği Python motoru tarafından yönetilir.</p>
+        <div class="kod-kutusu">
+değişken=sonuc=10+5*2
+terminal_yazdır=(sonuc)
+        </div>
+
+        <h2>4. Dosya Yapısı ve Mühür <span class="etiket">Kritik</span></h2>
+        <p>Mücahit dili dosyaları <b>.mc</b> uzantısıyla kaydedilmelidir. Motorun kodu doğru yorumlaması için dosyanın son satırı her zaman mühürlenmelidir.</p>
+        <div class="kod-kutusu">
+# Kodlarınız buraya gelir...
+bitti.dosya.mc
+        </div>
+
+        <h2>5. Geliştirici Ortamı</h2>
+        <p>Kurulum sihirbazını çalıştırdığınızda şu özellikler otomatik aktifleşir:</p>
+        <ul>
+            <li><b>Sözdizimi Vurgulama:</b> Komutlar mavi, metinler turuncu görünür.</li>
+            <li><b>Hızlı Başlat:</b> Sağ üstteki "Oynat" butonu ile kodu tek tıkla çalıştırabilirsiniz.</li>
+            <li><b>Özel İkon:</b> .mc dosyalarınız klasörlerde <b>MC.</b> logosuyla görünür.</li>
+        </ul>
+
+    </div>
+</body>
+</html>
